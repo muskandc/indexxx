@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(214, 220, 224);
+    width: 100%;
+    height: 4rem;
+    padding: 10px 10px;
+}
+.navbar{
+    display: flex;
+    padding: 10px 10px;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: darkred;
+    font-weight: 200;
+    padding: 10px;
+}
+.navbar li a:hover{
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+header .logo{
+    font-size: 25px;
+    color: darkred;
+    font-weight: 200;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.logo{
+    list-style: none;
+    text-decoration: none;
+}
+.icon{
+    margin-right: 2rem;
+}
+.icon i{
+    background-color: rgb(123, 127, 131);
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
+.icon i:hover{
+    background-color: darkgreen;
+    color: wheat;
+}
+.dropdown{
+    position: absolute;
+    top: 5rem;
+    background-color: antiquewhite;
+   border-radius: 10px;
+    padding: 5px;
+    list-style: none;
+    display: none;
+}
+.navbar:hover .dropdown{
+    display: block;
+}
+.dropdown li{
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+/*main*/
+#main img{
+    width: 100%;
+    height: 90vh;
+}
+#one, #two, #three{
+    background-color: black;
+    border: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 20px;
+    position: absolute;
+    bottom: 10px;
+
+}
+#one{
+    left: 50%;
+    margin-left: -5px;
+}
+#two{
+    left: 47%;
+    margin-left: -5px;
+}
+#three{
+    left: 44%;
+    margin-left: -5px;
+}
+#one:hover, #two:hover, #three:hover{
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+
+
+
+@media screen and (min-device-width:300px) and (max-device-width:700px){
+    .navbar{
+        position: absolute;
+            top: 3rem;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            z-index: 2;
+            width: 100%;
+    }
+    .navbar li{
+        color: white;
+        padding: 10px;
+    }
+    .navbar li a:hover{
+        padding: 2px;
+    }
+    .dropdown li{
+        display: none;
+    }
+    .icon{
+        margin-right: 7rem;
+    }
+    .icon i{
+        padding: 6px;
+    }
+    
+
+    #main img{
+        width: 100%;
+    }
+}
